@@ -1,0 +1,34 @@
+.navbar {
+    background-color: #EFF5FF; 
+    color: black; 
+    padding: 20px 0; /* Algo de padding alrededor de la barra */
+    text-align: right; /* Centrar los elementos de la lista */
+}
+
+.navbar__nav {
+    list-style: none; /* Remover estilos de lista */
+    padding: 0; /* Remover padding */
+    margin: 0; /* Remover márgenes */
+}
+
+.navbar__nav li {
+    display: inline; /* Mostrar elementos en línea */
+    margin-right: 60px; /* Espacio entre elementos */
+}
+
+.navbar__nav a {
+    color: black;
+    text-decoration: none; /* No subrayar los enlaces */
+    font-weight: bold; /* Texto en negrita */
+}
+
+.navbar__nav a:hover {
+    text-decoration: underline; /* Subrayar al pasar el mouse */
+}
+
+.navbar__salir{
+    background-color: #0842C5;
+    color: white !important;
+    padding: 10px 20px;
+    border-radius: 10px;
+}

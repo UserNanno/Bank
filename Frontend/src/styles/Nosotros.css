@@ -1,0 +1,188 @@
+#nosotros {
+    font-family: "PT Sans", sans-serif;; /* Usa una fuente común */
+    background: white; /* Color de fondo claro */
+    width: 100%;
+    height: 100vh;
+}
+
+#nosotros .inicio{
+    width: 100%;
+    height: 815px;
+}
+/* CABECERA */
+
+#nosotros .franja {  /* franja azul de la cabecera*/
+    width: 100%; /* Ancho completo de la página */
+    height: 10px; /* Altura de la franja */
+    background-color: #0842C5; /* Color de la franja */
+  }
+
+
+  #nosotros .header{
+    width: 100%;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo oscuro para la barra de navegación */
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    object-fit: cover;
+    align-items: center; 
+}
+
+#nosotros .logoOscuro{
+    align-items: center; 
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+#nosotros .logoOscuro img{
+    object-fit: cover;
+    height: 70px;
+}
+
+/*FONDO PRINCIPAL*/
+#nosotros .imagen_con_texto{
+    position: absolute;  
+}
+
+#nosotros .imagen_con_texto img{
+    width: 100%;
+}
+#nosotros .cuadro_con_texto{
+    position: absolute;
+    width: 250px;
+    top: 200px;
+    left: 90px;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 40px;
+    color: black;
+    line-height: 25px;
+    
+}
+
+
+/* INFORMACIÓN CENTRAL */
+
+#nosotros .centro{
+    padding-top: 30px;
+}
+
+
+
+#nosotros .barraIzquierda{
+    width: 330px;
+    background-color: #1E1E1E;
+    margin-left: 80px;   
+    position: absolute;
+}
+
+#nosotros .barraDerecha{
+    width: 330px;
+    background-color: #1E1E1E;
+    margin-left: 890px;   
+    position: absolute;
+}
+
+
+#nosotros  .nombre{
+    text-align: center;
+    font-size: 50px;
+}
+
+#nosotros .lema{
+    text-align: center;
+    font-size: 30px;
+}
+
+
+/* INFORMACIÓN PRINICIPAL DE LA EMPRESA */
+
+#nosotros .main{
+    width: 100%;
+    height: 800px;
+    /* background-color: red; */
+    padding-top: 60px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+    /* text-align: center; */
+}
+
+
+#nosotros .bloqueInferior{
+    width: 1100px;
+    height: 250px;
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 40px 0;
+}
+
+#nosotros .art{
+    background-color: rgba(239, 245, 255, 0.80);
+    height: 100%;
+    width: 75%;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    line-height: 27px;
+    text-align:left;
+}
+
+#nosotros .cuadro-imagen-titulo{
+    height: 100%;
+    width: 25%;
+    background-color: rgba(204, 220, 245, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#nosotros .nombre{
+    padding-left: 15px;
+    font-size: 20px;
+    font-weight: 550;
+}
+
+/* EMPLEADORES PRINCIPALES  */
+
+#nosotros .people{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#nosotros .line-people{
+    background-color:  #CFCFCF;
+}
+
+#nosotros .nombre-people{
+    padding-top: 10px;
+    text-align: center;
+    color:#807e7e ;
+}
+
+#nosotros .info-relleno{
+    line-height: 25px;
+    height: 140px;
+    font-size: 15PX;
+}
+#nosotros .info{
+    padding-left: 20px;
+    list-style-type: none;
+    
+}
+
+#nosotros .copyright{
+    align-items: center;
+    text-align: center;
+    font-size: 12px;
+}

@@ -1,0 +1,27 @@
+.card__menu{
+    width: 370px;
+    height: 330px;
+    padding: 10px;
+    background: white;
+    border-radius: 10px;
+    position: relative;
+    border: 1px solid #D9D9D9;
+}
+.card__menu img{
+    margin-bottom: -10px;
+}
+
+.card__menu div {
+    position: absolute;
+    top: 175px;
+    background: white;
+    border-radius: 5px; 
+    width: 260px;
+    height: 135px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 13px 23px;
+    left: 50%; 
+    transform: translateX(-50%);
+    box-shadow: 0px 0px 10px 0px #D9D9D9;
+}

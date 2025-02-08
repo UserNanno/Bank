@@ -1,0 +1,52 @@
+#suspender-cuenta {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 520px;
+    
+}
+
+#suspender-cuenta h2 {
+    background-color: #8F8F8F;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+#suspender-cuenta .suspender-form{
+    padding: 20px;
+
+}
+
+#suspender-cuenta .suspender-form input,
+#suspender-cuenta .suspender-form select
+ {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#suspender-cuenta .suspender-form textarea{
+    width: 480px;
+    height: 80px;
+    margin-bottom: 20px;
+    resize: none;
+}
+
+#suspender-cuenta .suspender-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#suspender-cuenta .suspender-form button:hover {
+    background-color: #0056b3;
+}

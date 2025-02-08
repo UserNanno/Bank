@@ -1,0 +1,52 @@
+#cerrar-cuenta {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 520px;
+    
+}
+
+#cerrar-cuenta h2 {
+    background-color: #8F8F8F;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+#cerrar-cuenta .cerrar-form{
+    padding: 20px;
+
+}
+
+#cerrar-cuenta .cerrar-form input,
+#cerrar-cuenta .cerrar-form select
+ {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#cerrar-cuenta .cerrar-form textarea{
+    width: 480px;
+    height: 80px;
+    margin-bottom: 20px;
+    resize: none;
+}
+
+#cerrar-cuenta .cerrar-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#cerrar-cuenta .cerrar-form button:hover {
+    background-color: #0056b3;
+}

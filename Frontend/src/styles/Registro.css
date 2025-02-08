@@ -1,0 +1,101 @@
+.registro__container {
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+
+}
+
+.registro__card {
+    width: 492px;
+    height: 717px;
+    margin: 50px 90px 50px auto; /* Centramos horizontalmente */
+    background-color: rgba(255, 255, 255, 0.9); /* Se aplica opacidad solo al fondo */
+    border-radius: 20px;
+    box-shadow: 0 0 20px black;
+    text-align: center;
+}
+
+.registro__logo {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.registro__dni {
+    width: 190px;
+    height: 17px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+
+}
+
+.registro__celular {
+    width: 115px;
+    margin-right: 15px;
+    margin-bottom: 40px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.registro__fechaNacimiento {
+    width: 160px;
+    margin-bottom: 40px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.registro__errorMessage {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.form__registro {
+    width: 296px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.registro__documentType {
+    width: 94px;
+    margin-bottom: 40px;
+    margin-right: 10px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+
+
+.registro__boton {
+    width: 296px;
+    height: 39px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #2FF96C;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.registro__input {
+    margin-bottom: 40px;
+    width: 296px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+
+
+
+
+

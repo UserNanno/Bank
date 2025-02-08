@@ -1,0 +1,30 @@
+#pago-servicios{
+    width: 600px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+#pago-servicios h1{
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#pago-servicios select,#pago-servicios input{
+    width: 300px;
+    padding: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#pago-servicios button{
+    width: 300px;
+    padding: 8px;
+    color: white;
+    background-color: #0842C5;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

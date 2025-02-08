@@ -1,0 +1,57 @@
+#transferencias{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#transferencias select,
+#transferencias .cuentaDestinoExterna input,
+#transferencias .montoTransferir input {
+    width: 400px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#transferencias .transferencias input{
+    margin-left: 10px;
+}
+
+#transferencias img {
+    width: 200px;
+    padding-top: 30px;
+}
+
+#transferencias h1 {
+    padding-bottom: 20px;
+}
+
+#transferencias .contenido-transferencias {
+    background-color: white;
+    padding-bottom: 40px;
+}
+
+#transferencias .contenido-transferencias p {
+    padding: 20px;
+}
+
+#transferencias .cuentaOrigen {
+    padding: 20px;
+}
+
+#transferencias .cuentaDestino {
+    padding: 20px;
+}
+
+#transferencias .cuentaDestinoExterna {
+    padding: 20px;
+}
+
+#transferencias .ejecutarTransferencia {
+    margin-top: 30px;
+    background-color: #0842C5;
+    color: white !important;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}

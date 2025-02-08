@@ -1,0 +1,44 @@
+#datos-personales  {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 520px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    
+}
+
+#datos-personales  h2 {
+    background-color: #8F8F8F;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#datos-personales .formDatos {
+    padding: 20px;
+    display: flex;
+}
+
+#datos-personales .formDatos div {
+    width: 50%;
+}
+
+#datos-personales .formDatos label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+#datos-personales .formDatos input,
+#datos-personales .formDatos select {
+    width: 170px;
+    height: 26px;   margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+
+}

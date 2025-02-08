@@ -1,0 +1,1 @@
+sonar-scanner -Dsonar.token=sqp_ec3fabe8bd1184218536f8171aed68b473eafe60

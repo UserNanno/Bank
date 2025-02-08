@@ -1,0 +1,63 @@
+#perfil {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-around;
+}
+#perfil .banner-lateral{
+    background-color: #333333;
+    width: 25%;
+    text-align: center;
+}
+
+#perfil .banner-lateral hr{
+    margin: 20px 20px;
+    border: 1px solid white;
+}
+
+#perfil .userPhoto{
+    margin: 40px auto 30px auto;
+    max-width: 150px;
+    border-radius: 50%; 
+    overflow: hidden; 
+    object-fit: cover;
+}
+
+#perfil .logo{
+    margin: 40px auto 30px auto;
+    max-width: 150px;
+}
+
+#perfil .banner-lateral h3{
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#perfil .banner-lateral ul{
+    list-style-type: none;
+}
+
+#perfil .banner-lateral li{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 5px;
+    padding-top: 5px;
+}
+
+#perfil .banner-lateral li:hover{
+    background-color: #0842C5;
+}
+
+#perfil .banner-lateral button{
+    background: none;
+      border: none;
+      color: inherit;
+      padding: 0;
+      font: inherit;
+      cursor: pointer;
+      outline: inherit;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}

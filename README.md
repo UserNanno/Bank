@@ -1,135 +1,93 @@
-**Documentación de la Estructura del Proyecto**
+# National Bank Peru - Backend API
 
-# 1. Introducción
+## Descripción
+Este proyecto es el backend de **National Bank Peru**, desarrollado en **Java** con **Spring Boot**, siguiendo el patrón **MVC** y principios **SOLID** para una arquitectura limpia y escalable. Proporciona una API REST para la gestión de cuentas bancarias, pagos de servicios, transacciones y usuarios.
 
-Este documento detalla la estructura del proyecto backend desarrollado en Java utilizando el framework Spring Boot. Se describen los directorios y archivos de código fuente, así como las configuraciones realizadas de acuerdo con la arquitectura de software establecida.
+## Tecnologías Utilizadas
+- **Java 22**
+- **Spring Boot 3.2.5**
+- **Spring Data JPA** (Para persistencia de datos)
+- **MySQL** (Base de datos relacional)
+- **Lombok** (Reducción de código boilerplate)
+- **Docker** (Contenedorización del servicio)
+- **Maven** (Gestión de dependencias y construcción del proyecto)
 
----
-
-# 2. Importación de Dependencias
-
-Se configuró el archivo `pom.xml` de **Maven** para incluir las dependencias necesarias:
-
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-    <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.2.5</version>
-        <relativePath/> <!-- lookup parent from repository -->
-    </parent>
-    <groupId>com.nationalbank</groupId>
-    <artifactId>nationalbankperu</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <name>nationalbankperu</name>
-    <description>Demo project for Spring Boot</description>
-    <properties>
-        <java.version>22</java.version>
-    </properties>
-    <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-jpa</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-devtools</artifactId>
-            <scope>runtime</scope>
-            <optional>true</optional>
-        </dependency>
-        <dependency>
-            <groupId>com.mysql</groupId>
-            <artifactId>mysql-connector-j</artifactId>
-            <scope>runtime</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <optional>true</optional>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
-    </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <excludes>
-                        <exclude>
-                            <groupId>org.projectlombok</groupId>
-                            <artifactId>lombok</artifactId>
-                        </exclude>
-                    </excludes>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
-</project>
-```
-
-Esta configuración incluye:
-
-- **Spring Boot Starter Data JPA**: Para manejo de persistencia con JPA.
-- **Spring Boot Starter Web**: Para la creación de APIs REST.
-- **Spring Boot DevTools**: Para facilitar el desarrollo con recarga automática.
-- **Conector MySQL**: Para la conexión con la base de datos MySQL.
-- **Lombok**: Para reducir la cantidad de código boilerplate.
-- **Spring Boot Starter Test**: Para pruebas unitarias.
-
----
-
-# 3. Creación del Proyecto Web
-
-El proyecto fue creado utilizando **Spring Boot** en un entorno de desarrollo **IntelliJ IDEA**. Se generó la estructura básica con la siguiente organización:
-
+## Estructura del Proyecto
 ```
 National_Bank/
 │   .gitignore
 │   docker-compose.yml
 │   Dockerfile
-│   HELP.md
-│   mvnw, mvnw.cmd
 │   pom.xml
 │   README.md
 │
-├── .idea/                  # Configuración del IDE (IntelliJ IDEA)
-├── .mvn/wrapper/           # Archivos de Maven Wrapper
 ├── src/
-│   ├── main/
-│   │   ├── java/com/nationalbank/nationalbankperu/
-│   │   │   ├── NationalbankperuApplication.java  # Clase principal de Spring Boot
-│   │   │   │
-│   │   │   ├── controller/   # Controladores REST
-│   │   │   │   ├── BankAccountController.java
-│   │   │   │   ├── ServicePaymentController.java
-│   │   │   │   ├── TransactionController.java
-│   │   │   │   ├── UserController.java
-│   │   │   │
-│   ├── test/  # Pruebas unitarias
-│   │   ├── java/com/nationalbank/nationalbankperu/
-│   │   │   ├── NationalbankperuApplicationTests.java
+│   ├── main/java/com/nationalbank/nationalbankperu/
+│   │   ├── NationalbankperuApplication.java  # Punto de entrada
+│   │   ├── controller/   # Controladores REST
+│   │   ├── model/        # Modelos de base de datos
+│   │   ├── repository/   # Repositorios JPA
+│   │   ├── service/      # Servicios de lógica de negocio
+│   │   ├── persistence/  # DAO (Acceso a datos)
+│   │   ├── resources/    # Configuración y archivos estáticos
 │
-├── target/  # Archivos compilados y ejecutables
-│   ├── nationalbankperu-0.0.1-SNAPSHOT.jar
-│   ├── classes/
-│   ├── static/
-│   ├── test-classes/
-│
-└── generated-sources/, generated-test-sources/, surefire-reports/  # Archivos generados por Maven y reportes de pruebas
+├── test/  # Pruebas unitarias
+└── target/ # Archivos compilados y ejecutables
 ```
 
-Se mantiene el formato de la estructura de directorios sin descuadrar el documento.
+## Instalación y Configuración
+### Requisitos Previos
+- **Java 22**
+- **Maven**
+- **Docker (opcional)**
+- **MySQL** instalado y configurado
+
+### Pasos para Ejecutar el Proyecto
+1. Clonar el repositorio:
+   ```sh
+   git clone https://github.com/tuusuario/national-bank-peru.git
+   cd national-bank-peru
+   ```
+2. Configurar la base de datos en `application.properties`:
+   ```properties
+   spring.datasource.url=jdbc:mysql://localhost:3306/nationalbank
+   spring.datasource.username=root
+   spring.datasource.password=root
+   spring.jpa.hibernate.ddl-auto=update
+   ```
+3. Construir y ejecutar el proyecto con Maven:
+   ```sh
+   mvn spring-boot:run
+   ```
+4. Alternativamente, ejecutar con Docker:
+   ```sh
+   docker-compose up --build
+   ```
+
+## Endpoints Principales
+### Gestión de Usuarios
+| Método | Endpoint | Descripción |
+|--------|---------|-------------|
+| GET | `/users/{id}` | Obtener usuario por ID |
+| POST | `/users` | Crear un nuevo usuario |
+| PUT | `/users/{id}` | Actualizar un usuario |
+| DELETE | `/users/{id}` | Eliminar un usuario |
+
+### Gestión de Cuentas Bancarias
+| Método | Endpoint | Descripción |
+|--------|---------|-------------|
+| GET | `/accounts/{id}` | Obtener cuenta bancaria |
+| POST | `/accounts` | Crear cuenta |
+| PUT | `/accounts/{id}` | Actualizar cuenta |
+| DELETE | `/accounts/{id}` | Eliminar cuenta |
+
+## Buenas Prácticas y Principios Aplicados
+- **SOLID**: Código modular y mantenible.
+- **DTOs**: Se utiliza para separar la capa de presentación y la de negocio.
+- **Spring Data JPA**: Uso de repositorios para acceso eficiente a la base de datos.
+- **Gestión de errores global** con `@ControllerAdvice`.
+- **Validaciones con `@Valid` y `@NotNull`** para evitar datos inconsistentes.
+
+---
+**© 2025 National Bank Peru. Todos los derechos reservados.**
 

@@ -45,7 +45,7 @@ National_Bank/
 ### Pasos para Ejecutar el Proyecto
 1. Clonar el repositorio:
    ```sh
-   git clone https://github.com/tuusuario/national-bank-peru.git
+   git clone https://github.com/UserNanno/Bank.git
    cd national-bank-peru
    ```
 2. Configurar la base de datos en `application.properties`:
